@@ -1,0 +1,80 @@
+.headline-font {
+    font-family: "Libre Caslon Text", serif;
+}
+
+.body-font {
+    font-family: "Manrope", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
+body {
+     background-color: rgb(255, 255, 255);
+    font-family: "Manrope", sans-serif;
+}
+
+/* Navbar */
+@keyframes slideRight {
+    from {
+        opacity: 0;
+        transform: translateX(-80px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+header {
+    animation: slideRight 0.5s ease-out;
+}
+
+/* Home page landing Animation */
+@keyframes homeFadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.home {
+    animation: homeFadeUp 0.6s ease-out;
+}
+
+.nav-link {
+    color: #5f504a;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #A86400;
+}
+
+.nav-link.active {
+    color: #A86400;
+    border-bottom-color: #A86400;
+}
+
+.musician-card {
+    transition: transform 0.3s ease;
+}
+
+.musician-card:hover {
+    transform: scale(1.03);
+}
+
+.musician-img {
+    transition: transform 0.5s ease;
+}
+
+.musician-card:hover .musician-img {
+    transform: scale(1.1);
+}
