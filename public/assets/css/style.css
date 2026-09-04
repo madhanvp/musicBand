@@ -1,0 +1,105 @@
+.headline-font {
+    font-family: "Libre Caslon Text", serif;
+}
+
+.body-font {
+    font-family: "Manrope", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 65px;
+}
+
+body {
+    background-color: #fef7f5;
+    font-family: "Manrope", sans-serif;
+}
+
+/* Navbar */
+@keyframes slideRight {
+    from {
+        opacity: 0;
+        transform: translateX(-80px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+header {
+    animation: slideRight 0.5s ease-out;
+}
+
+/* Home page landing Animation */
+@keyframes homeFadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.home {
+    animation: homeFadeUp 0.6s ease-out;
+}
+
+.nav-link {
+    color: #5f504a;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.nav-link:hover {
+    color: #A86400;
+}
+
+.nav-link.active {
+    color: #A86400;
+    border-color: #A86400;
+    border-bottom-width: 2px;
+    border-style: solid;
+}
+
+.musician-card {
+    transition: transform 0.3s ease;
+}
+
+.musician-card:hover {
+    transform: scale(1.03);
+}
+
+.musician-img {
+    transition: transform 0.5s ease;
+}
+
+.musician-card:hover .musician-img {
+    transform: scale(1.1);
+}
+
+#gallery {
+    background: #f8eee8;
+    clip-path: polygon(0 0, 100% 0, 100% 92%, 0 100%);
+}
+
+#stay-connected {
+    background: #fef7f5;
+}
+
+.reveal-item {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.55s cubic-bezier(0.16, 1, 0.3, 1), transform 0.55s cubic-bezier(0.16, 1, 0.3, 1);
+    transition-delay: var(--reveal-delay, 0ms);
+    will-change: opacity, transform;
+}
+
+.reveal-item.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
