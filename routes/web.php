@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-<<<<<<< HEAD
 use App\Models\Instrument;
 
 use App\Http\Controllers\Admin\InstrumentController;
@@ -49,9 +48,3 @@ Route::prefix('dashboard')
         Route::delete('/instruments/{instrument}', [InstrumentController::class, 'destroy'])
             ->name('instruments.destroy');
     });
-=======
-
-Route::get('/', function () {
-    return view('home');
-});
->>>>>>> 329de75f9c73636c6366a3a381a083a96e431079
