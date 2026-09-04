@@ -8,11 +8,19 @@
 
 html {
     scroll-behavior: smooth;
+<<<<<<< HEAD
     scroll-padding-top: 65px;
 }
 
 body {
     background-color: #fef7f5;
+=======
+    scroll-padding-top: 90px;
+}
+
+body {
+     background-color: rgb(255, 255, 255);
+>>>>>>> 329de75f9c73636c6366a3a381a083a96e431079
     font-family: "Manrope", sans-serif;
 }
 
@@ -52,7 +60,10 @@ header {
 .nav-link {
     color: #5f504a;
     transition: all 0.3s ease;
+<<<<<<< HEAD
     display: inline-block;
+=======
+>>>>>>> 329de75f9c73636c6366a3a381a083a96e431079
 }
 
 .nav-link:hover {
@@ -61,9 +72,13 @@ header {
 
 .nav-link.active {
     color: #A86400;
+<<<<<<< HEAD
     border-color: #A86400;
     border-bottom-width: 2px;
     border-style: solid;
+=======
+    border-bottom-color: #A86400;
+>>>>>>> 329de75f9c73636c6366a3a381a083a96e431079
 }
 
 .musician-card {
@@ -80,6 +95,7 @@ header {
 
 .musician-card:hover .musician-img {
     transform: scale(1.1);
+<<<<<<< HEAD
 }
 
 #gallery {
@@ -102,4 +118,6 @@ header {
 .reveal-item.is-visible {
     opacity: 1;
     transform: translateY(0);
+=======
+>>>>>>> 329de75f9c73636c6366a3a381a083a96e431079
 }
